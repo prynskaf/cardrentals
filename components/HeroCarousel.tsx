@@ -4,12 +4,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 const HeroImages = [
-  { imgUrl: "/hero.png", alt: "hero" },
-  { imgUrl: "/hero1.png", alt: "hero1" },
-  { imgUrl: "/hero2.png", alt: "hero2" },
-  { imgUrl: "/hero3.png", alt: "hero3" },
-  { imgUrl: "/hero4.png", alt: "hero4" },
-  { imgUrl: "/hero5.png", alt: "hero5" },
+  { imgUrl: '/hero.png', alt: 'hero' },
+  { imgUrl: '/hero1.png', alt: 'hero1' },
+  { imgUrl: '/hero2.png', alt: 'hero2' },
+  { imgUrl: '/hero3.png', alt: 'hero3' },
+  { imgUrl: '/hero4.png', alt: 'hero4' },
+  { imgUrl: '/hero5.png', alt: 'hero5' }
 ];
 
 const HeroCarousel = () => {
