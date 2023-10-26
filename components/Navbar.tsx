@@ -1,8 +1,8 @@
 'use client'
 import Link from "next/link";
-import Image from "next/image";
-
+import Image from "next/legacy/image";
 import CustomButton from "./CustomButton";
+import SignIn from "./SignIn";
 
 const NavBar = () => {
     const handleButtonClick = () => { 
@@ -10,8 +10,8 @@ const NavBar = () => {
     }
 
 return (
-  <header className='w-full  absolute z-10'>
-    <nav className='max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-transparent'>
+  <header className='w-full  fixed top-0 left-0 z-10  bg-white border-b border-gray-100'>
+    <nav className='max-w-[1440px] mx-auto flex justify-between  items-center sm:px-16 px-6 py-4'>
       <Link href='/' className='flex justify-center items-center'>
         <Image
           src='/logo.svg'
@@ -22,12 +22,7 @@ return (
         />
       </Link>
 
-      <CustomButton
-        title='Sign in'
-        btnType='button'
-        containerStyles='text-white rounded-full bg-primary-blue min-w-[130px] cursor-pointer'
-        handleClick={handleButtonClick}
-      />
+       <SignIn />
     </nav>
   </header>
 );

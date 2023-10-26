@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
@@ -27,10 +27,10 @@ const HeroCarousel = () => {
           src={image.imgUrl}
           alt={image.alt}
           key={image.alt}
-          width={500}
-          height={500}
-          layout="responsive" // Use "layout" attribute instead of "layout" property
-          className="object-contain"
+          width={510}
+          height={510}
+          // layout="responsive" // Use "layout" attribute instead of "layout" property
+          className="object-contain" 
           priority
         />
       ))}
