@@ -11,6 +11,7 @@ export default  async function Home() {
  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
   return (
+    <>
     <main className="overflow-hidden">
     <Hero />
 
@@ -49,6 +50,7 @@ export default  async function Home() {
     )}
      </div>
     </main>
+    </>
   )
 }
  

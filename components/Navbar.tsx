@@ -5,10 +5,6 @@ import CustomButton from "./CustomButton";
 import SignIn from "./SignIn";
 
 const NavBar = () => {
-    const handleButtonClick = () => { 
-        console.log("clicked");
-    }
-
 return (
   <header className='w-full  fixed top-0 left-0 z-10  bg-white border-b border-gray-100'>
     <nav className='max-w-[1440px] mx-auto flex justify-between  items-center sm:px-16 px-6 py-4'>

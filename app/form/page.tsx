@@ -2,9 +2,9 @@ import React from 'react'
 
 const Formpage = () => {
   return (
-    <div>
+    <div className='w-full h-full bg-black text-white z-10 flex justify-center items-center'>
         <h1>
-            Hello
+        Formpage section 
         </h1>
     </div>
   )
